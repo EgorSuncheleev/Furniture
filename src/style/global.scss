@@ -1,0 +1,29 @@
+
+// Подключение шрифта //
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Saira", sans-serif;
+}
+
+
+// Здесь будут утилитарные классы //
+
+.container {
+  padding: 0 6.25rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90rem;
+}
+
+.circle__header {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  z-index: 1;
+}

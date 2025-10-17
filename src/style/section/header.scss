@@ -1,0 +1,13 @@
+
+header {
+  background-image: url(../../assets/img/background-img-header.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 1000px;
+  color: var(--color-white);
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+    }
+}
