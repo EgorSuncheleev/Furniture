@@ -1,8 +1,7 @@
 .header {
-  background-image: url(../../assets/img/background-img-header.png);
+  background-image: url(../../assets/img/background-img-header-linear.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1000px;
   color: var(--color-white);
 
   &__top {
@@ -10,22 +9,21 @@
     justify-content: space-between;
     padding-top: 1.75rem;
 
-      &__logo {
-        font: var(--font-logo)
+    &__logo {
+      font: var(--font-logo);
+    }
+
+    &__menu {
+      &__list {
+        display: flex;
+        gap: 4rem;
       }
 
-      &__menu {
-        
-          &__list {
-            display: flex;
-            gap: 4rem;
-          }
-
-          &__link {
-            text-decoration: none;
-            font: var(--font-16);
-          }
+      &__link {
+        text-decoration: none;
+        font: var(--font-16);
       }
+    }
   }
 
   &__middle {
@@ -36,46 +34,72 @@
     gap: 1.875rem;
     text-align: center;
 
-      &__title {
-        font: var(--font-title);
-        max-width: 55.5rem;
-        width: 100%;
-      }
+    &__title {
+      font: var(--font-title);
+      max-width: 55.5rem;
+      width: 100%;
+    }
 
-      &__subtitle {
-        font: var(--font-20);
-        max-width: 39.1875rem;
-        width: 100%;
-      }
+    &__subtitle {
+      font: var(--font-20);
+      max-width: 39.1875rem;
+      width: 100%;
+    }
 
-      &__button {
-        padding: 1rem 5rem;
-        border-radius: .625rem;
-        background-color: #E2E2E266;
-        border: none;
-        font: var(--font-20-bold);
-        backdrop-filter: blur(.125rem); // Работает ли у тебя бэкдроп на браузере? У меня на Edge нет
-      }
-
+    &__button {
+      cursor: pointer;
+      padding: 1rem 5rem;
+      border-radius: 0.625rem;
+      background-color: #e2e2e266;
+      border: none;
+      font: var(--font-20-bold);
+      backdrop-filter: blur(
+        0.125rem
+      ); // Работает ли у тебя бэкдроп на браузере? У меня на Edge нет
+    }
   }
 
   &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12.125rem;
+    padding-bottom: 1.875rem;
+
+    &__table {
+      display: flex;
+      gap: 11.875rem;
+      background-color: var(--color-dark-green);
+      padding: 2.375rem 3.125rem;
+      border-radius: 1.25rem;
+
+      &__item {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 12.125rem;
+        text-align: center;
+        position: relative;
 
-          &__table {
-            display: flex;
-            gap: 11.875rem;
-            background-color: var(--color-dark-green);
-            padding: 2.375rem 3.125rem;
-            border-radius: 1.25rem;
+        &__number {
+          font: var(--font-40);
+        }
 
-              &__item {
-                @include display-column;
-              }
-          }
+        &__description {
+          font: var(--font-20);
+        }
+
+        ::after {
+          content: "";
+          position: absolute;
+          left: -50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 1px;
+          height: 100px;
+          background-color: white; // Как удалить первый элемент, точнее линию? 
+        }
       }
-
+    }
+  }
 }
