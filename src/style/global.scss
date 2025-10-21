@@ -17,6 +17,24 @@
   max-width: 90rem;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-widht: 576px) {
+  .container {
+    padding: 0 1.5625rem;
+  }
+}
+
 .circle__header {
   content: "";
   position: absolute;

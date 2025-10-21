@@ -1,6 +1,11 @@
 
 // Миксины // 
-
+@mixin flex($justify: center, $alighn: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alighn;
+  flex-direction: $direction;
+}
 
 
 

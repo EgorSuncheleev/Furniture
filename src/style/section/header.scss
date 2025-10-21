@@ -1,3 +1,14 @@
+@mixin flex($justify: center, $alighn: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alighn;
+  flex-direction: $direction;
+}
+
+.header__top__menu-burger {
+  display: none;
+}
+
 .header {
   background-image: url(../../assets/img/background-img-header-linear.png);
   background-repeat: no-repeat;
@@ -40,10 +51,22 @@
       width: 100%;
     }
 
+    @media (max-width: 1200px) {
+      &__title {
+        font: var(--font-40);
+      }
+    }
+
     &__subtitle {
       font: var(--font-20);
       max-width: 39.1875rem;
       width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      &__subtitle {
+        font: var(--font-16);
+      }
     }
 
     &__button {
@@ -56,6 +79,12 @@
       backdrop-filter: blur(
         0.125rem
       ); // Работает ли у тебя бэкдроп на браузере? У меня на Edge нет
+    }
+
+    @media (max-width: 1200px) {
+      &__button {
+        padding: 0.625rem 2.5rem;
+      }
     }
   }
 
@@ -73,11 +102,14 @@
       padding: 2.375rem 3.125rem;
       border-radius: 1.25rem;
 
+      @media (max-width: 1200px) {
+        &__table {
+          padding: 0.625rem 1.25rem;
+        }
+      }
+
       &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center, column);
         text-align: center;
         position: relative;
 
@@ -85,11 +117,23 @@
           font: var(--font-40);
         }
 
+        @media (max-width: 1200px) {
+          &__number {
+            font: var(--font-28);
+          }
+        }
+
         &__description {
           font: var(--font-20);
         }
 
-        ::after {
+        @media (max-width: 1200px) {
+          &__description {
+            font: var(--font-14);
+          }
+        }
+
+        &::after {
           content: "";
           position: absolute;
           left: -50%;
@@ -97,9 +141,94 @@
           transform: translate(-50%, -50%);
           width: 1px;
           height: 100px;
-          background-color: white; // Как удалить первый элемент, точнее линию? 
+          background-color: white; // Как удалить первый элемент, точнее линию?
+        }
+
+        &:first-child {
+          &::after {
+            display: none;
+          }
         }
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__bottom {
+    padding-top: 100px;
+  }
+
+  .header__bottom__table__item::after {
+    left: -100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5625rem;
+  }
+
+  .header__middle {
+    padding-top: 6.25rem;
+  }
+
+  .header__bottom__table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9.375rem;
+  }
+
+  .header__bottom__table__item::after {
+    left: -65%;
+  }
+
+  .header__bottom__table__item:nth-child(3)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__middle__title {
+    font: var(--font-28);
+  }
+}
+
+@media (max-width: 576px) {
+  .header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__top__menu-burger {
+    display: block;
+  }
+
+  .header__top__menu__list {
+    display: none;
+  }
+
+  .header__top__logo {
+    font: var(--font-24);
+  }
+
+  .header__middle__title {
+    font: var(--font-24);
+  }
+
+  .header__middle__subtitle {
+    font: var(--font-14);
+  }
+
+  .header__bottom__table {
+    gap: 4.6875rem;
+  }
+
+  .header__bottom__table__item::after {
+    left: -40%;
   }
 }

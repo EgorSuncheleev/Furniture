@@ -1,95 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/root.scss">
+    <link rel="stylesheet" href="./src/style/root.scss" />
     <title>furniture</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-      <div class="header__top">
-        <div class="header__top__logo">
-          FurniShop
-        </div>
-        <nav class="header__top__menu">
-          <ul class="header__top__menu__list">
-            <li class="header__top__menu__item">
-              <a href="/" class="header__top__menu__link">
-                Home
-              </a>
-            </li>
-            <li class="header__top__menu__item">
-              <a href="/" class="header__top__menu__link">
-                About
-              </a>
-            </li>
-            <li class="header__top__menu__item">
-              <a href="/" class="header__top__menu__link">
-                Features
-              </a>
-            </li>
-            <li class="header__top__menu__item">
-              <a href="/" class="header__top__menu__link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__middle">
-        <h1 class="header__middle__title">
-          Creative Home Simpify your Furniture
-        </h1>
-        <div class="header__middle__subtitle">
-          Do i have consent to record this meeting gain locaion, root-and-branch, review, nor game plan who’s the goto
-        </div>
-        <button class="header__middle__button">
-          Shop Now
-        </button>
-      </div>
-      <div class="header__bottom">
-        <div class="header__bottom__table">
-          <div class="header__bottom__table__item">
-            <div class="header__bottom__table__item__number">
-              7
-            </div>
-            <div class="header__bottom__table__item__description">
-              Year Experience
-            </div>
-          </div>
-
-          <div class="header__bottom__table__item">
-            <div class="header__bottom__table__item__number">
-              2
-            </div>
-            <div class="header__bottom__table__item__description">
-              Opened in the country
-            </div>
-          </div>
-
-          <div class="header__bottom__table__item">
-            <div class="header__bottom__table__item__number">
-              10k+
-            </div>
-            <div class="header__bottom__table__item__description">
-              Furniture sold
-            </div>
-          </div>
-
-          <div class="header__bottom__table__item">
-            <div class="header__bottom__table__item__number">
-              260+
-            </div>
-            <div class="header__bottom__table__item__description">
-              Variant Furniture
-            </div>
+        <div class="header__top">
+          <div class="header__top__logo">FurniShop</div>
+          <nav class="header__top__menu">
+            <ul class="header__top__menu__list">
+              <li class="header__top__menu__item">
+                <a href="/" class="header__top__menu__link"> Home </a>
+              </li>
+              <li class="header__top__menu__item">
+                <a href="/" class="header__top__menu__link"> About </a>
+              </li>
+              <li class="header__top__menu__item">
+                <a href="/" class="header__top__menu__link"> Features </a>
+              </li>
+              <li class="header__top__menu__item">
+                <a href="/" class="header__top__menu__link"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__top__menu-burger">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 12H7"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 6H3"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 18H3"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </div>
-      </div>
+        <div class="header__middle">
+          <h1 class="header__middle__title">
+            Creative Home Simpify your Furniture
+          </h1>
+          <div class="header__middle__subtitle">
+            Do i have consent to record this meeting gain locaion,
+            root-and-branch, review, nor game plan who’s the goto
+          </div>
+          <button class="header__middle__button">Shop Now</button>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom__table">
+            <div class="header__bottom__table__item">
+              <div class="header__bottom__table__item__number">7</div>
+              <div class="header__bottom__table__item__description">
+                Year Experience
+              </div>
+            </div>
+
+            <div class="header__bottom__table__item">
+              <div class="header__bottom__table__item__number">2</div>
+              <div class="header__bottom__table__item__description">
+                Opened in the country
+              </div>
+            </div>
+
+            <div class="header__bottom__table__item">
+              <div class="header__bottom__table__item__number">10k+</div>
+              <div class="header__bottom__table__item__description">
+                Furniture sold
+              </div>
+            </div>
+
+            <div class="header__bottom__table__item">
+              <div class="header__bottom__table__item__number">260+</div>
+              <div class="header__bottom__table__item__description">
+                Variant Furniture
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+    <main class="main">
+      <section class="create__home container">
+        <img
+          class="create__home__picture"
+          src="./src/assets/img/image-we-create-home-table.png"
+          loading="lazy"
+        />
+
+        <div class="create__home__content">
+          <div class="create__home__content__top">
+            <div class="create__home__content__top__title">We Create your home more aestetic</div>
+            <div class="create__home__content__top__subtitle">
+              Furnitre power is a software as services for multiperpose business
+              management system,
+            </div>
+          </div>
+
+          <div class="create__home__content__list">
+            <svg
+              class="create__home__content__list__svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Ic_chechlist">
+                <path
+                  id="Shape"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.55469 16.0001C3.55469 9.12723 9.12626 3.55566 15.9991 3.55566C19.2996 3.55566 22.4649 4.86677 24.7987 7.20056C27.1325 9.53434 28.4436 12.6996 28.4436 16.0001C28.4436 22.873 22.872 28.4446 15.9991 28.4446C9.12626 28.4446 3.55469 22.873 3.55469 16.0001ZM15.6379 20.617L21.8602 14.3948C22.3481 13.9068 22.3481 13.1157 21.8602 12.6277C21.3722 12.1397 20.581 12.1397 20.093 12.6277L14.7544 17.9788L11.9046 15.1166C11.5889 14.8009 11.1289 14.6776 10.6976 14.7932C10.2664 14.9087 9.92963 15.2455 9.81409 15.6767C9.69855 16.1079 9.82183 16.568 10.1375 16.8837L13.8708 20.617C14.1045 20.8526 14.4226 20.9851 14.7544 20.9851C15.0862 20.9851 15.4043 20.8526 15.6379 20.617Z"
+                  fill="#23262F"
+                />
+              </g>
+            </svg>
+
+            <div class="create__home__content__list__container">
+            <div class="create__home__content__list__container__title">
+              Valuation Services
+            </div>
+
+            <div class="create__home__content__list__container__subtitle">
+              Sometimes features require a short description. This can be
+              detailed description
+            </div>
+          </div>
+        </div>
+
+          <div class="create__home__content__list">
+            <svg
+              class="create__home__content__list-svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Ic_chechlist">
+                <path
+                  id="Shape"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.55469 16.0001C3.55469 9.12723 9.12626 3.55566 15.9991 3.55566C19.2996 3.55566 22.4649 4.86677 24.7987 7.20056C27.1325 9.53434 28.4436 12.6996 28.4436 16.0001C28.4436 22.873 22.872 28.4446 15.9991 28.4446C9.12626 28.4446 3.55469 22.873 3.55469 16.0001ZM15.6379 20.617L21.8602 14.3948C22.3481 13.9068 22.3481 13.1157 21.8602 12.6277C21.3722 12.1397 20.581 12.1397 20.093 12.6277L14.7544 17.9788L11.9046 15.1166C11.5889 14.8009 11.1289 14.6776 10.6976 14.7932C10.2664 14.9087 9.92963 15.2455 9.81409 15.6767C9.69855 16.1079 9.82183 16.568 10.1375 16.8837L13.8708 20.617C14.1045 20.8526 14.4226 20.9851 14.7544 20.9851C15.0862 20.9851 15.4043 20.8526 15.6379 20.617Z"
+                  fill="#23262F"
+                />
+              </g>
+            </svg>
+
+            <div class="create__home__content__list__container">
+            <div class="create__home__content__list__container__title">
+              Development of Furniture Modelss
+            </div>
+
+            <div class="create__home__content__list__container__subtitle">
+              Sometimes features require a short description. This can be
+              detailed description
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
   </body>
 </html>
