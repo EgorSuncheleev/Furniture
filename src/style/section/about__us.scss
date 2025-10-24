@@ -1,0 +1,102 @@
+
+.about__us {
+  display: flex;
+  gap: 2.5rem;
+  padding-bottom: 4.375rem;
+  padding-top: 4.375rem;
+  color: var(--color-black);
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.875rem;
+      max-width: 39.6875rem;
+
+        &__title {
+          font: var(--font-40);
+          text-transform: capitalize;
+        }
+
+        &__author {
+          display: flex;
+          gap: 1.25rem;
+          align-items: center;
+
+            &__container {
+              display: flex;
+              flex-direction: column;
+              gap: .625rem;
+
+                &__name {
+                  font: var(--font-20-bold);
+                }
+
+                &__class {
+                  font: var(--font-14);
+                  color: #23262F;
+                }
+            }
+
+        }
+
+        &__quote {
+              font: var(--font-20);
+              max-width: 35.625rem;
+              line-height: 170%;
+            }
+    }
+
+
+    &__right { // Так можно сделать? 
+      background-image: url(../../assets/img/about-us-img.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 35.125rem;
+      min-height: 12.8125rem;
+      width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+  .about__us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__us__right {
+    width: 35.125rem;
+    height: 21.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about__us__left__title {
+    font: var(--font-28);
+}
+
+  .about__us__right {
+    height: 12.8125rem;
+    width: 21.1875rem;
+  }
+
+  .about__us__left__author__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about__us__left__author__container__name {
+    font: var(--font-14);
+    font-weight: 600;
+}
+
+.about__us__left__quote {
+    font: var(--font-14);
+}
+
+.about__us__left__arrow {
+  display: none;
+}
+}

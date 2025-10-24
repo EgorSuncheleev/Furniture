@@ -1,0 +1,93 @@
+.your__email {
+  background-image: url(../../assets/img/background-img-email-form.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+
+    &__content {
+      padding-top: 6.25rem;
+      padding-bottom: 7.625rem;
+      margin-right: 1.5625rem;
+      color: var(--color-white);
+
+        &__title {
+          font: var(--font-40);
+          max-width: 21.25rem;
+          padding-bottom: 20px;
+        }
+
+        &__subtitle {
+          font: var(--font-20);
+          padding-bottom: 40px;
+        }
+
+        &__form {
+          border-radius: 8px;
+          display: flex;
+          gap: 1.375rem;
+
+            &__item {
+              border-radius: 8px; // Почему то не работает) 
+
+                &__label {
+                  padding: 12px;
+                  width: 24rem;
+                }
+            }
+
+          &__button {
+            background-color: var(--color-black);
+            border: none;
+            border-radius: 8px;
+            padding: 13px;
+            font: var(--font-20);
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+        }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .your__email__container__content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .your__email__container__content__form__item__label {
+    width: 100%;
+  }
+
+  .your__email__container {
+    align-items: center;
+  }
+
+  .your__email__container__content__title {
+    font: var(--font-24);
+  }
+
+  .your__email__container__content__subtitle {
+    font: var(--font-14);
+  }
+
+  .your__email__container__content__form__button {
+    font: var(--font-12);
+    font-weight: 600;
+    padding: 11px;
+  }
+
+  .your__email__container__content__form__item__label {
+    padding: 7px;
+  }
+  
+}

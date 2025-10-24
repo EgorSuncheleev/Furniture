@@ -1,0 +1,147 @@
+.new__storenow__content__text {
+  display: none;
+}
+
+.display__block {
+  display: none;
+}
+.new__storenow {
+  @include flex(center, center, row);
+  gap: 4.375rem;
+  padding-bottom: 4.375rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 15.3125rem;
+    color: var(--color-black);
+
+    &__title {
+      font: var(--font-40);
+      width: 13.75rem;
+      margin-bottom: 4.9375rem;
+    }
+
+    &__subtitle {
+      font: var(--font-16);
+      padding-bottom: 3rem;
+    }
+
+    &__link {
+      font: var(--font-16);
+      font-weight: 500;
+      text-decoration: underline solid 0% 0%;
+      letter-spacing: 1%;
+      display: flex;
+      gap: 0.625rem;
+      align-items: center;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    gap: 1.25rem;
+
+    &__chair {
+      position: relative;
+      display: inline-block;
+
+      &::after { // Не получилось у меня почему-то)) По разному пробовал, но не вышло, может подскажешь, как сделать 
+        content: "Chair";
+        color: var(--color-white);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        width: 70px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .new__storenow {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .new__storenow__content {
+    width: 24.3125rem;
+
+    &__title {
+      width: 22.75rem;
+    }
+  }
+
+  .new__storenow__content__link {
+    display: none;
+  }
+
+  .new__storenow__content__text {
+    display: block;
+    width: 100%;
+  }
+
+  .new__storenow__content {
+    width: 100%;
+  }
+
+  .new__storenow__slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 1.875rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .new__storenow__slider__cupboard {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+      .new__storenow__slider {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .new__storenow__content__title {
+        font: var(--font-28);
+        margin-bottom: 30px;
+      }
+
+          .new__storenow {
+            gap: .625rem;
+          }
+}
+
+@media (max-width: 576px) {
+  
+  .new__storenow__slider__bed {
+    display: none;
+  }
+
+  .new__storenow__content__text {
+    display: none;
+  }
+
+  .new__storenow__content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .new__storenow__content__title {
+    font: var(--font-24);
+  }
+
+  .new__storenow__content__subtitle {
+    padding: 0;
+    font: var(--font-14);
+  }
+}
