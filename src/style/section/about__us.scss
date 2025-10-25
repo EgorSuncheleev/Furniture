@@ -46,15 +46,6 @@
             }
     }
 
-
-    &__right { // Так можно сделать? 
-      background-image: url(../../assets/img/about-us-img.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      max-width: 35.125rem;
-      min-height: 12.8125rem;
-      width: 100%;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -64,11 +55,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .about__us__right {
-    width: 35.125rem;
-    height: 21.25rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -77,14 +63,11 @@
     font: var(--font-28);
 }
 
-  .about__us__right {
-    height: 12.8125rem;
-    width: 21.1875rem;
-  }
+  
 
   .about__us__left__author__img {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .about__us__left__author__container__name {
@@ -99,4 +82,14 @@
 .about__us__left__arrow {
   display: none;
 }
+
+    .about__us {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+    }
 }
+
+    .about__us__right {
+      width: 35.125rem;
+      width: 100%;
+    }

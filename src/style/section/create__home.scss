@@ -6,12 +6,9 @@
   padding-bottom: 4.625rem;
 
     &__img {
-      background-image: url('../../assets/img/image-we-create-home-table.png');
+      max-width: 34.625rem;
       width: 100%;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 34.625rem;
-      height: 27.6875rem;
+      
     }
 
     &__content {
@@ -82,13 +79,16 @@
 }
 
 @media (max-width: 768px) {
-  .create__home__img {
-    width: 21.25rem;
-    height: 16.875rem;
-  }
 
   .create__home__content__list__container__title {
     font: var(--font-16);
     font-weight: 600;
   }
+
+  .create__home {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    gap: 3.125rem;
+  }
+
 }

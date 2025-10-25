@@ -24,12 +24,9 @@
     }
 
   &__img {
-    background-image: url(../../assets/img/best-furniture-img.png);
-    max-width: 100%;
-    width: 34.625rem;
-    height: 24.9375rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 34.625rem;
+    width: 100%;
+    
   }
 }
 
@@ -52,5 +49,10 @@
 
   .best__furniture__content {
     width: 100%;
+  }
+
+  .best__furniture {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
   }
 }
