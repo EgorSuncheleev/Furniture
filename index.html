@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/root.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>furniture</title>
   </head>
   <body>
@@ -105,8 +109,10 @@
     </header>
     <main class="main">
       <section class="create__home container">
-        
-          <img class="create__home__img" src="./src/assets/img/best-furniture-img.png">
+        <img
+          class="create__home__img"
+          src="./src/assets/img/best-furniture-img.png"
+        />
 
         <div class="create__home__content">
           <div class="create__home__content__top">
@@ -214,27 +220,35 @@
           </a>
         </div>
 
-        <div class="new__storenow__slider">
-          <img
-            src="./src/assets/img/image-slider-chair.png"
-            alt=""
-            class="new__storenow__slider__chair"
-          />
-          <img
-            src="./src/assets/img/image-slider-bed.png"
-            alt=""
-            class="new__storenow__slider__bed"
-          />
-          <img
-            src="./src/assets/img/image-slider-cupboard.png"
-            alt=""
-            class="new__storenow__slider__cupboard"
-          />
-          <img
-            src="./src/assets/img/image-slider-light.png"
-            alt=""
-            class="new__storenow__slider__light display__block"
-          />
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper__item"
+                src="./src/assets/img/image-slider-chair.png"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__item"
+                src="./src/assets/img/image-slider-bed.png"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__item"
+                src="./src/assets/img/image-slider-cupboard.png"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__item"
+                src="./src/assets/img/image-slider-light.png"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
       <section class="best__furniture container">
@@ -249,7 +263,10 @@
             services
           </div>
         </div>
-        <img class="best__furniture__img" src="./src/assets/img/best-furniture-img.png">
+        <img
+          class="best__furniture__img"
+          src="./src/assets/img/best-furniture-img.png"
+        />
       </section>
       <section class="all__product container">
         <div class="all__product__top">
@@ -883,7 +900,7 @@
           </div>
         </div>
 
-        <img class="about__us__right" src="./src/assets/img/about-us-img.png" >
+        <img class="about__us__right" src="./src/assets/img/about-us-img.png" />
         <!-- А мы можем делать так? то есть пустой класс для бэкгроунд имг?  -->
       </section>
       <section class="your__email">
@@ -898,17 +915,16 @@
 
             <div class="your__email__container__content__form">
               <form class="your__email__container__content__form__item">
-                
-                  <input
-                    type="text"
-                    email="email"
-                    placeholder="Your email address"
-                    class="your__email__container__content__form__item__label"
-                  />
-                
+                <input
+                  type="text"
+                  email="email"
+                  placeholder="Your email address"
+                  class="your__email__container__content__form__item__label"
+                />
+
                 <button class="your__email__container__content__form__button">
-                shop now
-              </button>
+                  shop now
+                </button>
               </form>
             </div>
           </div>
@@ -1099,14 +1115,13 @@
             </nav>
           </div>
 
-
           <div class="footer__container__bottom">
-
-
             <nav class="footer__container__bottom__menu">
               <ul class="footer__container__bottom__menu__list">
                 <li class="footer__container__bottom__menu__list__item">
-                  <a class="footer__container__bottom__menu__list__item__link footer__bottom">
+                  <a
+                    class="footer__container__bottom__menu__list__item__link footer__bottom"
+                  >
                     Our Products
                   </a>
                 </li>
@@ -1136,7 +1151,9 @@
             <nav class="footer__container__bottom__menu">
               <ul class="footer__container__bottom__menu__list">
                 <li class="footer__container__bottom__menu__list__item">
-                  <a class="footer__container__bottom__menu__list__item__link footer__bottom">
+                  <a
+                    class="footer__container__bottom__menu__list__item__link footer__bottom"
+                  >
                     Top Features
                   </a>
                 </li>
@@ -1166,7 +1183,9 @@
             <nav class="footer__container__bottom__menu">
               <ul class="footer__container__bottom__menu__list">
                 <li class="footer__container__bottom__menu__list__item">
-                  <a class="footer__container__bottom__menu__list__item__link footer__bottom">
+                  <a
+                    class="footer__container__bottom__menu__list__item__link footer__bottom"
+                  >
                     Resources
                   </a>
                 </li>
@@ -1196,7 +1215,9 @@
             <nav class="footer__container__bottom__menu">
               <ul class="footer__container__bottom__menu__list">
                 <li class="footer__container__bottom__menu__list__item">
-                  <a class="footer__container__bottom__menu__list__item__link footer__bottom">
+                  <a
+                    class="footer__container__bottom__menu__list__item__link footer__bottom"
+                  >
                     Company
                   </a>
                 </li>
@@ -1226,7 +1247,9 @@
             <nav class="footer__container__bottom__menu">
               <ul class="footer__container__bottom__menu__list">
                 <li class="footer__container__bottom__menu__list__item">
-                  <a class="footer__container__bottom__menu__list__item__link footer__bottom">
+                  <a
+                    class="footer__container__bottom__menu__list__item__link footer__bottom"
+                  >
                     Favourite Things
                   </a>
                 </li>
@@ -1259,5 +1282,16 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
