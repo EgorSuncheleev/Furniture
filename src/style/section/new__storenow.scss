@@ -9,6 +9,7 @@
   @include flex(center, center, row);
   gap: 4.375rem;
   padding-bottom: 4.375rem;
+  overflow: hidden;
 
   &__content {
     display: flex;
@@ -149,3 +150,4 @@
     padding-bottom: 3.125rem;
   }
 }
+
